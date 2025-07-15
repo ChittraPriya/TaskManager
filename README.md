@@ -1,12 +1,61 @@
-# React + Vite
+# ✅ React Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight and responsive task manager built using **React**, with tasks stored in **localStorage**. This app lets you add, toggle (complete/incomplete), and delete tasks — and your data persists even after a refresh.
 
-Currently, two official plugins are available:
+## 🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![App Icon](./assets/todo_icon.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Features
+
+- 📝 Add new tasks with a single click
+- ✅ Mark tasks as complete or incomplete
+- 🗑️ Delete tasks
+- 💾 Tasks persist in `localStorage`
+- 📱 Responsive UI using Tailwind CSS
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the app locally.
+
+## Install dependencies
+
+npm create vite@latest
+npm install
+
+##  Start the development server
+
+npm run dev
+
+## 📄 Explanation
+
+Todo.js manages the task list state using useState.
+
+Tasks are stored and updated in localStorage via useEffect.
+
+useRef is used to read the input field without controlled input state.
+
+Each task has:
+
+a unique id (timestamp),
+
+text (string),
+
+isComplete (boolean).
+
+## 🛠️ Built With
+
+React
+
+Tailwind CSS
+
+JavaScript (ES6+)
+
+LocalStorage API
+
+## 🙋‍♀️ Author
+K.Chittra Priya
